@@ -1,0 +1,10 @@
+@media only screen and (max-width: 1024px) {
+  #nav-Bar {
+    display: none;
+  }
+  #skiMenu {
+    max-height:30px;
+    position:fixed;
+    right: 30px;
+  }
+}
