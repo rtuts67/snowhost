@@ -2,13 +2,3 @@ body {
   background-image: url('../assets/mountain.jpg');
   background-size: cover;
 }
-
-#navBar {
-  max-height: 40px;
-  background-color: #e5f9ff;
-}
-.navigation-item{
-  color: #757a8a;
-  display:flex;
-  justify-content: space-around;
-}

@@ -26,8 +26,14 @@
   }
 
   .navigation-item {
-    color: #757a8a;
-    display:flex;
+    font-family: 'Khula';
+    color: #494d57;
+    display: flex;
     justify-content: space-around;
+    padding: 2px;
+  }
+
+  .navigation-item:hover {
+    color: #67c741;
   }
 }
