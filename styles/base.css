@@ -2,3 +2,13 @@ body {
   background-image: url('../assets/mountain.jpg');
   background-size: cover;
 }
+footer {
+  max-height: 30px;
+  background-color: #e5f9ff;
+  font-family: 'Khula';
+  color: #494d57;
+}
+
+footer:hover {
+  color: #67c741;
+}
