@@ -1,10 +1,12 @@
 @media only screen and (max-width: 1024px) {
   #navBar {
-    display: none;
+    visibility: hidden;
+    overflow: hidden;
   }
+
   #skiMenu {
-    max-height:30px;
-    position:fixed;
+    max-height: 30px;
+    position: fixed;
     right: 30px;
   }
   #mobileMenu {
@@ -38,8 +40,27 @@
   }
 }
 
+#openingContent {
+  margin-top: 100px;
+  font-family: 'Khula', sans-serif;
+  background-color: #e5f9ff;
+  opacity: .8;
+  font-size: 1em;
+  font-style: normal;
+  font-weight: bold;
+  color: #494d57;
+  display: flex;
+  justify-content: center;
+}
+
+#center {
+  justify-content: center;
+}
 #registerHere {
-margin-top: 40px;
+margin-top: 30px;
+font-family: 'Khula', sans-serif;
+font-size: .7em;
+font-style: normal;
 display: flex;
 justify-content: space-around;
 text-decoration: none;
@@ -47,5 +68,5 @@ text-decoration: none;
 
 #registerButton {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
 }

@@ -20,17 +20,19 @@
     <div id="mobileNav">
       <img src="assets/menu-icon.jpg" alt="mobile navigation menu" id="skiMenu">
       <ul id="mobileMenu">
-        <li><a href="/" class="navigation-item" data-content="landingPage"></li>
-        <li><a href="/selectASkiHost" class="navigation-item" data-content="selectASkiHost"></li>
-        <li><a href="/becomeASkiHost" class="navigation-item" data-content="becomeASkiHost"></li>
-        <li><a href="/contactUs" class="navigation-item" data-content="contactUs"></li>
+        <li><a href="/" class="navigation-item" data-content="landingPage"></a></li>
+        <li><a href="/selectASkiHost" class="navigation-item" data-content="selectASkiHost"></a></li>
+        <li><a href="/becomeASkiHost" class="navigation-item" data-content="becomeASkiHost"></a></li>
+        <li><a href="/contactUs" class="navigation-item" data-content="contactUs"></a></li>
       </ul>
     </div>
     <section id="homeSki" class="page-content">
-      <div>Our purpose: to help the vacation skier/snowboarder to have the local experience.
-      Register here to find a ski host!
-    </div>
-      <form id="registerHere" class="form">
+      <div id="openingContent">
+      <p>Our purpose: to help the vacation skier/snowboarder to have the local experience.<br>
+      <span id="center">Register here to find a ski host!</span></p>
+      </div>
+      <div id="registerHere">
+      <form class="form">
         <label for="name">Name</label>
         <input id="name" placeholder="Full Name" type="text" required>
         <label for="email">Email</label>
@@ -41,6 +43,7 @@
         <button id="registerButton" type="submit" form="registerHere">Submit</button>
         </label>
       </form>
+    </div>
     </section>
     <footer>Snowhost LLC TO BE FORMED</footer>
   </body>

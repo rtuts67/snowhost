@@ -5,22 +5,12 @@ body {
   background-size: cover;
 }
 
-div {
-  padding-top: 75px;
-  font-family: 'Khula' sans-serif;
-  font-size: 1em;
-  font-style: normal;
-  text-decoration: none !important;
-  color: #494d57;
-  display: flex;
-  justify-content: space-around;
-}
-
 footer {
   max-height: 30px;
   background-color: #e5f9ff;
   font-family: 'Khula', sans-serif;
   color: #494d57;
+  text-decoration: none;
   display: flex;
   position: fixed;
   clear: both;
@@ -32,4 +22,5 @@ footer {
 
 footer:hover {
   color: #67c741;
+  text-decoration: none;
 }
