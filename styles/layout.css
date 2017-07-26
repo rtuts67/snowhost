@@ -37,3 +37,15 @@
     color: #67c741;
   }
 }
+
+#registerHere {
+margin-top: 40px;
+display: flex;
+justify-content: space-around;
+text-decoration: none;
+}
+
+#registerButton {
+  display: flex;
+  justify-content: center;
+}
