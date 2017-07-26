@@ -7,6 +7,13 @@ footer {
   background-color: #e5f9ff;
   font-family: 'Khula';
   color: #494d57;
+  display: flex;
+  position: fixed;
+  clear: both;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  justify-content: space-around;
 }
 
 footer:hover {
