@@ -3,11 +3,11 @@
 (function(module) {
   var homeView = {};
 
-  homeView.reveal = function (ele) {
-    ele.getElementById('selectASkiHost').hide();
-    ele.getElementById('becomeAskiHost').hide();
-    ele.getElementById('contactUs').hide();
-    ele.getElementById('homeSki').fadein(500);
+  homeView.reveal = function () {
+    $('#selectASkiHost').hide();
+    $('#becomeASkiHost').hide();
+    $('#contactUs').hide();
+    $('#homeSki').fadeIn(500);
   }
 
   module.homeView = homeView;
