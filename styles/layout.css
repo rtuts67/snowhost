@@ -29,6 +29,7 @@
 
   .navigation-item {
     font-family: 'Khula';
+    font-size: .9em;
     color: #494d57;
     display: flex;
     justify-content: space-around;
@@ -41,7 +42,7 @@
 }
 
 #openingContent {
-  margin-top: 100px;
+  margin-top: 75px;
   font-family: 'Khula', sans-serif;
   background-color: #e5f9ff;
   opacity: .8;
