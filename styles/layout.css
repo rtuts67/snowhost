@@ -1,4 +1,5 @@
 @media only screen and (max-width: 1024px) {
+
   #navBar {
     visibility: hidden;
     overflow: hidden;
@@ -12,6 +13,9 @@
   #mobileMenu {
     visibility: hidden;
     position: absolute;
+  }
+  .page-content {
+    display: none;
   }
 }
 
@@ -38,6 +42,9 @@
 
   .navigation-item:hover {
     color: #67c741;
+  }
+  .page-content {
+    display: none;
   }
 }
 
