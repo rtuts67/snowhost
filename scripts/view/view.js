@@ -7,5 +7,8 @@ var skiHomeLoad = function (event) {
 }
 skiHomeLoad();
 
+var handleLoginPage = function (
+  
+)
 module.skiHomeView = skiHomeView;
 })(window);
