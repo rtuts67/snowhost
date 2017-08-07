@@ -1,24 +1,35 @@
 'use strict';
 
-function(module) {
+(function(module) {
 
-var SkiResort = funtction(ski) {
-  this.id = ski.id;
-  SkiResorts.allSkiResorts.push(this);
-}
+  var SkiResort = function(obj) {
+    this.name = obj.name;
+    SkiResort.allSkiResorts.push(this);
+  };
 
-SkiResorts.allSkiResorts = []
 
-var getTheSKiResorts = function () {
-$.getJSON('https://skimap.org/SkiAreas/view/${id}.json')
-  .then(function(obj){
-    obj.forEach(function(el) {
-      new SkiResort(el);
-    });
-  })
-  .then(function() {
-    localStorage.setItem('ski_resorts', JSON.stringify(SkiResorts.allSkiResorts));
-  });
+  SkiResort.allSkiResorts = [];
+  SkiResort.getTheSKiResorts = function() {
+    $.ajax({
+      url:'https://skimap.org/SkiAreas/index.xml',
+      method:'GET',
+      dataType: 'xml',
+      success: function(data) {
+        console.log(data)
+        //How do I parse this xml data to javascript then to json?
+      }
+    })
+  }
+  //   .then(function(data) {
+  //       JSON.stringify(data)
+  //   //    //JSON.parse(data)
+  //     console.log(data)
+  //  })
+    // localStorage.setItem('ski_resort', JSON.stringify(SkiResort.allSkiResorts))
 
-module.SkiResorts = SkiResorts;
-};
+      // .then(function() {
+      //   localStorage.setItem('ski_resorts', JSON.stringify(SkiResort.allSkiResorts));
+      //});
+  SkiResort.getTheSKiResorts();
+  module.SkiResort = SkiResort;
+})(window);
