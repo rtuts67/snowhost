@@ -4,17 +4,9 @@
   var skiHomeLoad = function (event) {
     $('.page-content').hide()
     $('#homeSki').show()
+    Member.getData()
   }
   skiHomeLoad();
-
-  var handleTheSubmitButton = function () {
-    $('#registerHere').on('click', function(event) {
-      event.preventDefault();
-      $('#registrationConfirmed').fadeIn(400);
-      var el = $(this);
-    })
-  }
-  handleTheSubmitButton();
 
   var handleTheForm = function () {
     $('#registerHere').submit(function(event) {
@@ -25,6 +17,8 @@
         email: $(this).find('#email').val(),
         password: $(this).find('#password').val()
       }
+
+      //console.log(registerData)
 
       Member.postData(registerData)
       // Member.postData(registerData);

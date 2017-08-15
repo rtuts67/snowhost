@@ -9,7 +9,7 @@ app.use(bodyParser.urlencoded({extended: true}))
 
 var connectionString = process.env.DATABASE_URL || 'postgres://localhost:5432'
 
-app.get('/registerDB', function(req, res) {
+app.get('/snowhostdb2', function(req, res) {
   const client = new pg.Client(connectionString);
   client.connect(function(err) {
     if(err) {
@@ -28,7 +28,7 @@ app.get('/registerDB', function(req, res) {
   })
 })
 
-app.post('/registerDB', bodyParser.json(), function(req, res){
+app.post('/snowhostdb2', bodyParser.json(), function(req, res){
   const client = new pg.Client(connectionString);
 
   client.connect(function(err){
@@ -36,7 +36,7 @@ app.post('/registerDB', bodyParser.json(), function(req, res){
 
     client.query(
     'INSERT INTO register_data (name, email, password) VALUES($1, $2, $3)',
-    [req.body.name, req.body.email, req.password],
+    [req.body.name, req.body.email, req.body.password],
     function(err) {
       if(err) console.error('Error running query', err);
       client.end();
@@ -45,10 +45,28 @@ app.post('/registerDB', bodyParser.json(), function(req, res){
   res.send('Post complete')
 })
 
+app.get('/', function(req, res) {
+  const client = new pg.Client(connectionString)
+
+  client.connect(function(err) {
+    if(err) console.error('Trouble connecting to postgres: ', err)
+
+    client.query(
+      'CREATE TABLE IF NOT EXISTS register_data (id SERIAL PRIMARY KEY, name VARCHAR(50) NOT NULL, email VARCHAR(80) NOT NULL, password VARCHAR(50))',
+      err => {
+        if(err) console.error('Could not create the table', err)
+        client.end()
+      }
+    )
+  })
+  res.sendFile('index.html', {root: '.'})
+})
+
+
 app.use(express.static('./'))
 
 function callBack(request, response) {
-  response.sendFile('index.html', {root: './'});
+  response.sendFile('index.html', {root: '.'});
 }
 
 app.get('*', callBack)
