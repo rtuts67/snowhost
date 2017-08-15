@@ -16,7 +16,7 @@
       dataType: 'xml',
       success: function(data) {
         console.log(data)
-        //How do I parse this xml data to javascript then to json?
+        //How do I parse this xml data to json?
       }
     })
   }

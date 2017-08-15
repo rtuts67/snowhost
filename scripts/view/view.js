@@ -15,7 +15,7 @@
       var registerData = {
         name: $(this).find('#name').val(),
         email: $(this).find('#email').val(),
-        password: $(this).find('#password').val()
+        skiresort: $(this).find('#skiresort').val()
       }
 
       //console.log(registerData)

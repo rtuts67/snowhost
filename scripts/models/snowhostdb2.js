@@ -5,7 +5,7 @@
     this.member_id = obj.member_id;
     this.name = obj.name;
     this.email = obj.email;
-    this.password = obj.password;
+    this.skiresort = obj.skiresort;
     Member.allMembers.push(this)
   };
 
