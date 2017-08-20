@@ -14,7 +14,6 @@
     <nav id="navBar">
       <a href="/" class="navigation-item">Home</a>
       <a href="/selectASkiHost" class="navigation-item">Select a Ski Host</a>
-      <a href="/becomeASkiHost" class="navigation-item">Become a Ski Host</a>
       <a href="/contactUs" class="navigation-item">Contact Us</a>
     </nav>
     <div id="mobileNav">
@@ -22,7 +21,6 @@
       <ul id="mobileMenu">
         <li><a href="/" class="navigation-item" data-content="landingPage"></a></li>
         <li><a href="/selectASkiHost" class="navigation-item" data-content="selectASkiHost"></a></li>
-        <li><a href="/becomeASkiHost" class="navigation-item" data-content="becomeASkiHost"></a></li>
         <li><a href="/contactUs" class="navigation-item" data-content="contactUs"></a></li>
       </ul>
     </div>
@@ -31,27 +29,24 @@
       <div id="openingContent">
       <p>Welcome to Ski Host!<br>
       Our purpose: to help the vacation skier/snowboarder to have the local experience.<br>
-      <span id="center">Register below to find a ski host!</span></p>
+      <span id="center">Register below to become a Ski Host!</span></p>
       </div>
-      <div id="registerHere">
-      <form class="form">
+      <form class="form" id="registerHere">
         <label for="name">Name</label>
         <input id="name" placeholder="Full Name" type="text" required>
         <label for="email">Email</label>
-        <input id="email" placeholder="abc123@gmail.com" type="text" required>
-        <label for="password">Password</label>
-        <input id="password" placeholder="Hello.1" type="text" required>
+        <input id="email" placeholder="abc123@gmail.com" type="email" required>
+        <label for="skiresort">Ski Resort Where You Reside</label>
+        <input id="skiresort" placeholder="Schwietzer" type="text" required>
         <label for="submit">
         <button id="registerButton" type="submit" form="registerHere">Submit</button>
         </label>
       </form>
-    </div>
+    </section>
+    <section id="registrationConfirmed">
     </section>
     <section id="selectASkiHost" class="page-content">
     Select a Ski Host!
-    </section>
-    <section id="becomeASkiHost" class="page-content">
-    Become a Ski Host!
     </section>
     <section id="contactUs" class="page-content">
     For all questions and inquiries please email snowhost@gmail.com and we will get back to you shortly.
@@ -60,7 +55,7 @@
     <footer>Snowhost LLC TO BE FORMED</footer>
     <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="scripts/models/app.js"></script>
+    <script src="scripts/models/snowhostdb2.js"></script>
     <script src="scripts/view/view.js"></script>
     <script src="scripts/controllers/homeView.js"></script>
     <script src="scripts/controllers/selectASkiHost.js"></script>
