@@ -98,3 +98,16 @@ text-decoration: none;
   display: flex;
   justify-content: space-around;
 }
+
+#registrationConfirmed {
+  display: none;
+  font-family: 'Khula', sans-serif;
+  background-color: #e5f9ff;
+  opacity: .8;
+  font-size: .6em;
+  font-style: normal;
+}
+
+#registeredSkiHost {
+  display: hidden;
+}

@@ -19,6 +19,7 @@
       }
 
       Member.postData(registerData)
+      $('#registrationConfirmed').fadeIn(500);
 
     })
   };
