@@ -5,6 +5,19 @@ body {
   background-size: cover;
 }
 
+h3 {
+  font-family: 'Khula', sans-serif;
+  color: #494d57;
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+p {
+  font-family: 'Khula', sans-serif;
+  color: #494d57;
+  text-decoration: none;
+}
+
 footer {
   max-height: 30px;
   background-color: #e5f9ff;

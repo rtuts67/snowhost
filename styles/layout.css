@@ -52,6 +52,7 @@
     color: #67c741;
   }
   .page-content {
+    margin-top: 100px;
     display: none;
     font-family: 'Khula', sans-serif;
     background-color: #e5f9ff;
@@ -65,7 +66,6 @@
 }
 
 #openingContent {
-  margin-top: 75px;
   font-family: 'Khula', sans-serif;
   background-color: #e5f9ff;
   opacity: .8;
@@ -80,6 +80,7 @@
 #center {
   justify-content: center;
 }
+
 #registerHere {
 margin-top: 30px;
 font-family: 'Khula', sans-serif;

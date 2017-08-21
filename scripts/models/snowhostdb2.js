@@ -20,7 +20,7 @@
       });
     })
    .then(function() {
-     localStorage.setItem('register_info', JSON.stringify(Member.allMembers));
+     localStorage.setItem('register_all', JSON.stringify(Member.allMembers));
    });
   };
 

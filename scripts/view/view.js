@@ -18,13 +18,7 @@
         skiresort: $(this).find('#skiresort').val()
       }
 
-      //console.log(registerData)
-
       Member.postData(registerData)
-      // Member.postData(registerData);
-      // $('.page-content').hide();
-      // $('#registerHere').reset[0];
-      // $('#registrationConfirmed').fadeIn(500);
 
     })
   };
