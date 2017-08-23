@@ -19,11 +19,14 @@
     font-family: 'Khula', sans-serif;
     background-color: #e5f9ff;
     opacity: .8;
-    font-size: 1em;
+    font-size: .8em;
     font-style: normal;
     font-weight: bold;
     color: #494d57;
     justify-content: center;
+  }
+  #registerHere {
+    padding-bottom: 5px;
   }
 }
 
@@ -52,6 +55,7 @@
     color: #67c741;
   }
   .page-content {
+    margin-top: 100px;
     display: none;
     font-family: 'Khula', sans-serif;
     background-color: #e5f9ff;
@@ -60,12 +64,12 @@
     font-style: normal;
     font-weight: bold;
     color: #494d57;
-    justify-content: center;
+    margin-left: 200px;
+    margin-right: 200px;
   }
 }
 
 #openingContent {
-  margin-top: 75px;
   font-family: 'Khula', sans-serif;
   background-color: #e5f9ff;
   opacity: .8;
@@ -73,13 +77,13 @@
   font-style: normal;
   font-weight: bold;
   color: #494d57;
-  display: flex;
   justify-content: center;
 }
 
 #center {
   justify-content: center;
 }
+
 #registerHere {
 margin-top: 30px;
 font-family: 'Khula', sans-serif;
@@ -93,4 +97,20 @@ text-decoration: none;
 #registerButton {
   display: flex;
   justify-content: space-around;
+}
+
+#registrationConfirmed {
+  display: none;
+  font-family: 'Khula', sans-serif;
+  background-color: #e5f9ff;
+  opacity: .8;
+  font-size: .8em;
+  font-style: normal;
+  margin-top: 5px;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+#registeredSkiHost {
+  visibility: hidden;
 }

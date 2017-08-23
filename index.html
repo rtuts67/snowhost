@@ -8,6 +8,13 @@
     <link href="styles/modules.css" type="text/css" rel="stylesheet">
     <link href="styles/state.css" type="text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Khula" rel="stylesheet">
+    <script id="template" type="text/x-handlebars-template">
+      <article>
+        <p id="name">Name: {{name}}</p>
+        <p id="email">Email: {{email}}</p>
+        <p id="skiresort">Ski Resort: {{skiresort}}</p>
+      </article>
+    </script>
     <title>Snowhost</title>
   </head>
   <body>
@@ -27,9 +34,9 @@
     <main>
     <section id="homeSki" class="page-content">
       <div id="openingContent">
-      <p>Welcome to Ski Host!<br>
-      Our purpose: to help the vacation skier/snowboarder to have the local experience.<br>
-      <span id="center">Register below to become a Ski Host!</span></p>
+      <h3>Welcome to Ski Host!</h3>
+      <p>Our purpose: to help the vacation skier/snowboarder to have the local experience.</p>
+      <p><span id="center">Register below to become a Ski Host!</span></p>
       </div>
       <form class="form" id="registerHere">
         <label for="name">Name</label>
@@ -44,17 +51,19 @@
       </form>
     </section>
     <section id="registrationConfirmed">
+      Your are now a registered Ski Host!
     </section>
     <section id="selectASkiHost" class="page-content">
-    Select a Ski Host!
+    Select a Ski Host Below:
     </section>
     <section id="contactUs" class="page-content">
     For all questions and inquiries please email snowhost@gmail.com and we will get back to you shortly.
     </section>
   </main>
     <footer>Snowhost LLC TO BE FORMED</footer>
-    <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
     <script src="scripts/models/snowhostdb2.js"></script>
     <script src="scripts/view/view.js"></script>
     <script src="scripts/controllers/homeView.js"></script>

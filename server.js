@@ -16,7 +16,7 @@ app.get('/snowhostdb2', function(req, res) {
       console.error('Trouble connecting to postgres', err)
     }
     client.query(
-      'SELECT * FROM register_data',
+      'SELECT * FROM register_data3',
       function(err, result) {
         if(err) {
           console.error('Query failed', err)
@@ -35,7 +35,7 @@ app.post('/snowhostdb2', bodyParser.json(), function(req, res){
     if(err) console.error('Trouble connecting to postgres', err)
 
     client.query(
-    'INSERT INTO register_data2 (name, email, skiresort) VALUES($1, $2, $3)',
+    'INSERT INTO register_data3 (name, email, skiresort) VALUES($1, $2, $3)',
     [req.body.name, req.body.email, req.body.skiresort],
     function(err) {
       if(err) console.error('Error running query', err);
@@ -52,7 +52,7 @@ app.get('/', function(req, res) {
     if(err) console.error('Trouble connecting to postgres: ', err)
 
     client.query(
-      'CREATE TABLE IF NOT EXISTS register_data2 (id SERIAL PRIMARY KEY, name VARCHAR(50) NOT NULL, email VARCHAR(75) NOT NULL, skiresort VARCHAR(50) NOT NULL)',
+      'CREATE TABLE IF NOT EXISTS register_data3 (id SERIAL PRIMARY KEY, name VARCHAR(50) NOT NULL, email VARCHAR(50) NOT NULL, skiresort VARCHAR(75) NOT NULL)',
       err => {
         if(err) console.error('Could not create the table', err)
         client.end()

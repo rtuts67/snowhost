@@ -11,6 +11,12 @@
 
   Member.allMembers = [];
 
+  Member.prototype.toHtml = function() {
+    var memberTemplate = $('#template').html();
+    var template = Handlebars.compile(memberTemplate)
+    return template(this);
+  }
+
   Member.getData = function() {
     $.getJSON('/snowhostdb2')
     //.then(console.log(this))
@@ -20,7 +26,7 @@
       });
     })
    .then(function() {
-     localStorage.setItem('register_info', JSON.stringify(Member.allMembers));
+     localStorage.setItem('register_all', JSON.stringify(Member.allMembers));
    });
   };
 
@@ -30,6 +36,10 @@
       method: 'POST',
       data: obj
     });
-  };
+
+    Member.allMembers.forEach(function(member) {
+      $('#selectASkiHost').append(member.toHtml())
+    });
+  }
   module.Member = Member
 })(window);

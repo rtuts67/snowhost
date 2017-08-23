@@ -1,7 +1,7 @@
 'use strict';
 (function(module) {
   var skiHomeView = {};
-  var skiHomeLoad = function (event) {
+  var skiHomeLoad = function () {
     $('.page-content').hide()
     $('#homeSki').show()
     Member.getData()
@@ -18,14 +18,8 @@
         skiresort: $(this).find('#skiresort').val()
       }
 
-      //console.log(registerData)
-
       Member.postData(registerData)
-      // Member.postData(registerData);
-      // $('.page-content').hide();
-      // $('#registerHere').reset[0];
-      // $('#registrationConfirmed').fadeIn(500);
-
+      $('#registrationConfirmed').fadeIn(500);
     })
   };
 
