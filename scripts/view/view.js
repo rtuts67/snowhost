@@ -1,7 +1,7 @@
 'use strict';
 (function(module) {
   var skiHomeView = {};
-  var skiHomeLoad = function (event) {
+  var skiHomeLoad = function () {
     $('.page-content').hide()
     $('#homeSki').show()
     Member.getData()
@@ -20,7 +20,6 @@
 
       Member.postData(registerData)
       $('#registrationConfirmed').fadeIn(500);
-
     })
   };
 

@@ -104,10 +104,13 @@ text-decoration: none;
   font-family: 'Khula', sans-serif;
   background-color: #e5f9ff;
   opacity: .8;
-  font-size: .6em;
+  font-size: .8em;
   font-style: normal;
+  margin-top: 5px;
+  margin-left: 200px;
+  margin-right: 200px;
 }
 
 #registeredSkiHost {
-  display: hidden;
+  visibility: hidden;
 }
