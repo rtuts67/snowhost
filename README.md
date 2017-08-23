@@ -12,15 +12,16 @@ Future: Will turn this potentially into a business idea with full functionality 
 
 User stories:
 
-As a user I would like the ability to register as a Ski Host
+As a user I would like the ability to register as a Ski Host.
+
 As a user I would like to be able to see a list of registered ski hosts with their email and the ski resort they can give me a tour.
 
 Page Scaffolding:
 
-Home page: Will have a small description of the purpose of the website, and a section for site visitor to register as a ski host
+Home page: Will have a small description of the purpose of the website, and a section for site visitor to register as a ski host.
 
-When information is submitted, It will go to a small data base on my comp for using postgres and sequel for the ski host registered user information
+When information is submitted, It will go to a small data base on my comp for using postgres and sequel for the ski host registered user information.
 
-Select A Ski Host Page will render the list of ski hosts registered in the database
+Select A Ski Host Page will render the list of ski hosts registered in the database.
 
-Contact Us will have basic email information
+Contact Us will have basic email information.
